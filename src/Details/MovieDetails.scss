@@ -1,9 +1,13 @@
 
 .main-movie-details-container{
+    background-size: cover;
 .movie-details-container{
     display: flex;
     justify-content: center;
-    margin: 40px 0px;
+    padding: 40px 0px;
+    color: cornsilk;
+    font-size: 16px;
+    font-weight: 700;
 
     .movie-details{
 
@@ -11,6 +15,10 @@
         height: 400px;
         text-align: left;
         padding: 50px;
+        // color: aliceblue;
+        .color-property{
+            color: deepskyblue;
+        }
         
 
     }

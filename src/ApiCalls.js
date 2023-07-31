@@ -39,3 +39,9 @@ export const searchTvData = (searchKeyword) => {
     .then((response) => response.json())
     .then((data) => data);
 };
+
+export const movieTrailer = (id) => {
+  return fetch(`https://api.themoviedb.org/3/movie/${id}/videos`, options)
+    .then((response) => response.json())
+    .then((data) => data);
+};

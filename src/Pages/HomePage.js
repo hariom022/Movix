@@ -8,6 +8,7 @@ import {
   getTopRatedMovies,
   movieDetails,
   searchTvData,
+  movieTrailer,
 } from "../ApiCalls";
 import TopRated from "../TopRated/TopRated";
 import { useDispatch, useSelector } from "react-redux";
@@ -21,6 +22,7 @@ import Footer from "../Footer/Footer";
 import SearchMovie from "../SearchMovie/SearchMovie";
 import MovieDetails from "../Details/MovieDetails";
 import SearchTV from "../SearchMovie/SearchTV";
+import MovieVideo from "../Video/MovieVideo";
 
 const HomePage = () => {
   const dispatch = useDispatch();
@@ -68,6 +70,7 @@ const HomePage = () => {
     movieDetails(id).then((data) =>
       dispatch({ type: "MOVIE_DETAILS", payload: data })
     );
+    movieTrailer(id).then((data) => console.log("movievideo", data));
   };
 
   return (

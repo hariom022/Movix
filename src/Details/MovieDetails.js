@@ -13,7 +13,12 @@ const MovieDetails = () => {
   const nevigate = useNavigate();
 
   return (
-    <div className="main-movie-details-container">
+    <div
+      className="main-movie-details-container"
+      style={{
+        backgroundImage: `url(https://image.tmdb.org/t/p/original/${movieDetailsData.poster_path})`,
+      }}
+    >
       <div className="movie-details-container">
         <img
           src={`https://image.tmdb.org/t/p/original/${movieDetailsData.poster_path}`}
@@ -25,24 +30,26 @@ const MovieDetails = () => {
           <h3>{movieDetailsData.title}</h3>
           <p>
             {" "}
-            <b>Release Date :</b> {movieDetailsData.release_date}
+            <b className="color-property">Release Date :</b>{" "}
+            {movieDetailsData.release_date}
           </p>
           <p>
             {" "}
-            <b>Rating : </b>
+            <b className="color-property">Rating : </b>
             {movieDetailsData.vote_average}
           </p>
           <p>
             {" "}
-            <b>Budget:</b>
+            <b className="color-property">Budget:</b>
             {movieDetailsData.budget}
           </p>
           <p>
-            <b>Total Collection :</b> {movieDetailsData.revenue}
+            <b className="color-property">Total Collection :</b>{" "}
+            {movieDetailsData.revenue}
           </p>
           <p>
             {" "}
-            <b>Overview :</b>
+            <b className="color-property">Overview :</b>
             {movieDetailsData.overview}
           </p>
         </div>
