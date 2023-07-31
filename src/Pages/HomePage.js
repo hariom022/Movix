@@ -71,7 +71,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="">
+    <div className="home-page">
       <BannerImage
         searchDataHandler={searchDataHandler}
         movieSearchHandler={movieSearchHandler}
