@@ -1,0 +1,36 @@
+
+
+.bannerImage{
+
+    .button-search{
+        width: 952px;
+        height: 44px;
+        display: flex;
+        position: absolute;
+    top: 443px;
+    left: 282px;
+    border-radius: 20px;
+    background-color: white;
+        input{
+            width: 94%;
+            border-radius: 22px;
+            border: none;
+            outline: none;   
+            padding-left: 20px;
+
+        }
+        button{
+            background: aqua;
+            padding: 6px 10px;
+            border-radius: 27px;
+            outline: none;
+            border: none;
+
+           
+           
+        }
+
+    }
+
+   
+}

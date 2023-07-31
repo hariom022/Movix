@@ -1,0 +1,56 @@
+
+.main-header {
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+    background: #000027;
+
+    .movix-log {
+      display: flex;
+      margin: 7px 0px 16px 0px;
+    }
+    img{
+        margin-top: 10px;
+    }
+    .header-list {
+        display: flex;
+      ul {
+        display: flex;
+        list-style-type: none;
+        margin: 20px 0px 15px 0px;
+        li {
+            // justify-content: space-around;
+            margin-left: 23px;
+            cursor: pointer;
+            color: white;
+            &:hover{
+              color: #000027;
+              background-color: white;
+              border-radius: 5px;
+               padding: 0px 7px;
+            }
+
+
+            .button{
+               width: 210px;
+                height: 26px;
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                background: blue;
+                background: white;
+                input{
+                    border-radius: 30px;
+                    border: none;
+                    outline: none;
+                }
+                .fa-search{
+                    color: blue;
+                }
+            }
+        }
+      }
+    }
+  }
+}
+
