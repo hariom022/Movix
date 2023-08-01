@@ -1,36 +1,113 @@
+.bannerImage {
+  .baner-search-button {
+    padding: 384px 0px 0px 254px;
 
-
-.bannerImage{
-
-    .button-search{
-        width: 952px;
-        height: 44px;
-        display: flex;
-        position: absolute;
-    top: 443px;
-    left: 282px;
-    border-radius: 20px;
-    background-color: white;
-        input{
-            width: 94%;
-            border-radius: 22px;
-            border: none;
-            outline: none;   
-            padding-left: 20px;
-
-        }
-        button{
-            background: aqua;
-            padding: 6px 10px;
-            border-radius: 27px;
-            outline: none;
-            border: none;
-
-           
-           
-        }
-
+    .button-search {
+      width: 952px;
+      height: 44px;
+      display: flex;
+      border-radius: 20px;
+      background-color: white;
+      input {
+        width: 94%;
+        border-radius: 22px;
+        border: none;
+        outline: none;
+        padding-left: 20px;
+      }
+      button {
+        background: aqua;
+        padding: 6px 10px;
+        border-radius: 27px;
+        outline: none;
+        border: none;
+      }
     }
+  }
+}
 
-   
+//media query
+
+@media (min-width: 1060px) and (max-width: 1250px) {
+  .bannerImage {
+    .baner-search-button {
+      padding: 384px 0px 0px 120px;
+
+      .button-search {
+        width: 850px;
+        height: 40px;
+        border-radius: 20px;
+        input {
+          width: 94%;
+          border-radius: 22px;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1060px) {
+  .bannerImage {
+    .baner-search-button {
+      padding: 384px 0px 0px 120px;
+
+      .button-search {
+        width: 605px;
+        height: 35px;
+        border-radius: 20px;
+        input {
+          width: 94%;
+          border-radius: 22px;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 669px) and (max-width: 800px) {
+  .bannerImage {
+    .baner-search-button {
+      padding: 384px 0px 0px 120px;
+
+      .button-search {
+        width: 441px;
+        height: 33px;
+        border-radius: 20px;
+        input {
+          width: 94%;
+          border-radius: 22px;
+          padding-left: 20px;
+        }
+        button {
+          padding: 4px 10px;
+          border-radius: 27px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 350px) and (max-width: 669px) {
+  .bannerImage {
+    .baner-search-button {
+      padding: 384px 0px 0px 86px;
+
+      .button-search {
+        width: 322px;
+        height: 27px;
+
+        input {
+          width: 94%;
+          border-radius: 22px;
+          padding-left: 20px;
+        }
+        button {
+          padding: 2px 8px;
+          border-radius: 27px;
+        }
+      }
+    }
+  }
 }

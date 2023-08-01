@@ -13,13 +13,15 @@ const BannerImage = (props) => {
           height: 500,
         }}
       >
-        <div className="button-search">
-          <input
-            type="text"
-            placeholder="Search..."
-            onChange={(e) => movieSearchHandler(e)}
-          />
-          <button onClick={() => searchDataHandler()}>Search</button>
+        <div className="baner-search-button">
+          <div className="button-search">
+            <input
+              type="text"
+              placeholder="Search..."
+              onChange={(e) => movieSearchHandler(e)}
+            />
+            <button onClick={() => searchDataHandler()}>Search</button>
+          </div>
         </div>
       </div>
     </div>
