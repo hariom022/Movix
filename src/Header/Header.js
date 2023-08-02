@@ -3,6 +3,7 @@ import "./Header.scss";
 import { useDispatch, useSelector } from "react-redux";
 import MovieList from "./MoviesList/MovieList";
 import TvShows from "./TV Shows/TvShows";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Header = (props) => {
   let { tvSearchHandler, tvSeriesSearchHandler } = props;
@@ -66,6 +67,9 @@ const Header = (props) => {
               </div>
             </li>
           </ul>
+          <div className="menu-link">
+            <MenuIcon style={{ color: "white" }} />
+          </div>
         </div>
       </div>
       <div className="movie-list">

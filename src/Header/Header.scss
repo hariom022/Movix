@@ -49,10 +49,13 @@
         }
       }
     }
+    .menu-link {
+      display: none;
+    }
   }
 }
 
-@media (min-width: 500px) and (max-width: 669px) {
+@media screen and (max-width: 650px) {
   .main-header {
     .header {
       .movix-log {
@@ -71,9 +74,7 @@
               padding: 0px 7px;
             }
             .button {
-              width: 210px;
-              height: 26px;
-              border-radius: 30px;
+              display: none;
             }
           }
         }
